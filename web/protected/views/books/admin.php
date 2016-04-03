@@ -24,6 +24,12 @@ $('.search-form form').submit(function(){
 	return false;
 });
 ");
+
+$this->widget('application.extensions.fancybox.EFancyBox', array(
+        'target'=>'a[class=fancybox1]',
+        'config'=>array(),
+    )
+);
 ?>
 
 <h1>Manage Books</h1>
@@ -52,8 +58,16 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'name',
         [
             'name' => 'preview',
-            'type' => 'raw',
-            'value'=> CHtml::image($this::PATH.$model->preview),
+            'type' => 'html',
+            'value'=> '(!empty($data->preview)) ?
+                CHtml::image(
+                    $data::PATH.$data->preview,
+                    "$data->name",
+                    array("style"=>"height:100px;",
+                        "onclick"=>"fullSize",
+                        "class"=>"group1 cboxElement")) :
+                "no image"',
+//CHtml::image($this::PATH.$model->preview),
         ],
         //'ImageUrl'=>Yii::app()->baseUrl.'/image/update.png',
         [

@@ -20,6 +20,7 @@ class Books extends CActiveRecord
     public $_date_from;
     public $_date_to;
     public $author_search;
+    const PATH = '/../uploaded/images/';
 
     /**
 	 * @return string the associated database table name

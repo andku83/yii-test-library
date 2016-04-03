@@ -8,7 +8,6 @@ class BooksController extends Controller
 	 */
 	public $layout='//layouts/column2';
 
-    const PATH = '/../uploaded/images/';
 	/**
 	 * @return array action filters
 	 */
@@ -95,7 +94,7 @@ class BooksController extends Controller
                     $model->preview = 'book_'.$model->id.'_'.$timestamp.'.'.$type;
                     $model->save();
 
-                    $name = Yii::app()->basePath.$this::PATH.$model->preview;
+                    $name = Yii::app()->basePath.$model::PATH.$model->preview;
                     $uploadedFile->saveAs($name);
 
                     $this->resize($name);
@@ -144,12 +143,12 @@ class BooksController extends Controller
             {
                 if (get_class($uploadedFile)==='CUploadedFile')
                 {
-                    $name = Yii::app()->basePath.$this::PATH.$model->preview;
+                    $name = Yii::app()->basePath.$model::PATH.$model->preview;
                     $uploadedFile->saveAs($name);
 
                     if ($old_preview != 'default.png')
                     {
-                        @unlink(Yii::app()->basePath.$this::PATH.$old_preview);
+                        @unlink(Yii::app()->basePath.$model::PATH.$old_preview);
                     }
 
                     $this->resize($name);
