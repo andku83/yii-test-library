@@ -6832,3 +6832,11 @@ Stack trace:
 REQUEST_URI=/uploaded/images/book_153_1459687309.JPG
 HTTP_REFERER=http://yii.loc/index.php/books/153
 ---
+2016/04/03 15:43:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in E:\_Projects\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\_Projects\yii\web\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
