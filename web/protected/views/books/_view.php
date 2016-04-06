@@ -22,9 +22,9 @@
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('preview')); ?>:</b>
-	<?php echo CHtml::imageButton($this::PATH.$data->preview,array(
-        'height'=>150,
-        'onclick'=> 'fullSize',
+	<?php echo CHtml::image($data::PATH.$data->preview, $data->name, array(
+        'style'=>'max-height:300px;max-width:300px;',
+        /*'onclick'=> '',*/
     )); ?>
 	<br />
 

@@ -18,14 +18,14 @@
     </div>
 
 
-<!--	<div class="row">
-        <?php /*echo $form->label($model,'_date_from'); */?>
-        <?php /*echo $form->textField($model,'_date_from'); */?>
+	<div class="row">
+        <?php echo $form->label($model,'_date_from'); ?>
+        <?php echo $form->dateField($model,'_date_from'); ?>
 
-        <?php /*echo $form->label($model,'_date_to'); */?>
-        <?php /*echo $form->textField($model,'_date_to'); */?>
+        <?php echo $form->label($model,'_date_to'); ?>
+        <?php echo $form->dateField($model,'_date_to'); ?>
     </div>
--->
+
 	<div class="row buttons">
 		<?php echo CHtml::submitButton(Yii::t('books','Search')); ?>
 	</div>

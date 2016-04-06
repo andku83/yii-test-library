@@ -51,9 +51,14 @@ class BooksController extends Controller
 	 */
 	public function actionView($id)
 	{
-		$this->render('view',array(
-			'model'=>$this->loadModel($id),
-		));
+        if(Yii::app()->request->isAjaxRequest) {
+            $this->renderPartial('view', array('model' => $this->loadModel($id)), false, true);
+        } else
+        {
+            $this->render('view', array(
+                'model' => $this->loadModel($id),
+            ));
+        }
 	}
 
 	/**
@@ -153,8 +158,10 @@ class BooksController extends Controller
 
                     $this->resize($name);
                 }
-
-                $this->redirect(array('view','id'=>$model->id));
+                if (is_array(Yii::app()->session['last_criteria']))
+                    $this->redirect(array_merge(array('admin'), Yii::app()->session['last_criteria']));
+                else
+                    $this->redirect(array_merge(array('admin')));
             }
 		}
 
@@ -170,7 +177,12 @@ class BooksController extends Controller
 	 */
 	public function actionDelete($id)
 	{
-		$this->loadModel($id)->delete();
+        $model = $this->loadModel($id);
+        $preview = $model->preview;
+        if ($model->delete() && $preview!='default.png')
+        {
+            @unlink(Yii::app()->basePath.$model::PATH.$preview);
+        }
 
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
 		if(!isset($_GET['ajax']))
@@ -193,10 +205,24 @@ class BooksController extends Controller
 	 */
 	public function actionAdmin()
 	{
+        //$session = new CHttpSession;
+        //$session->open();
 		$model=new Books('search');
 		//$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['Books']))
-			$model->attributes=$_GET['Books'];
+		if (isset($_GET))
+        {
+            if(isset($_GET['Books']))
+            {
+                $model->attributes=$_GET['Books'];
+            }
+
+            Yii::app()->session['last_criteria'] = $_GET;
+
+        } else
+        {
+            unset(Yii::app()->session['last_criteria']);
+        }
+
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -231,7 +257,7 @@ class BooksController extends Controller
 		}
 	}
 
-    private function resize($name, $max_size = 1024)
+    private function resize($name, $max_size = 900)
     {
         $image = Yii::app()->image->load($name);
 
@@ -239,17 +265,10 @@ class BooksController extends Controller
         $width = $image->__get('width');
         if ($height < $max_size && $width < $max_size)
         {
-            //return;
+            return;
         }
-        if($height<$width)
-        {
-            $image->resize($max_size, $max_size)->quality(100);
-        }
-        else
-        {
-            $image->resize($max_size, $max_size);
-        }
-        /* end- utk memutar jika file ori portrait */
+
+        $image->resize($max_size, $max_size)->quality(100);
 
         $image->save();
 

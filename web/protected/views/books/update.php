@@ -19,3 +19,5 @@ $this->menu=array(
 <h1>Update Books <?php echo $model->id; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>
+
+<?php print_r(Yii::app()->session['last_criteria']); ?>

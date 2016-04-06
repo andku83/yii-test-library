@@ -2,6 +2,8 @@
 /* @var $this BooksController */
 /* @var $model Books */
 
+if (!Yii::app()->request->isAjaxRequest):
+
 $this->breadcrumbs=array(
 	'Books'=>array('index'),
 	$model->name,
@@ -9,11 +11,12 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	array('label'=>'List Books', 'url'=>array('index')),
-	array('label'=>'Create Books', 'url'=>array('create')),
-	array('label'=>'Update Books', 'url'=>array('update', 'id'=>$model->id)),
-	array('label'=>'Delete Books', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Books', 'url'=>array('admin')),
+	array('label'=>'Create Books', 'url'=>array('create'), 'visible'=>!Yii::app()->user->isGuest),
+	array('label'=>'Update Books', 'url'=>array('update', 'id'=>$model->id), 'visible'=>!Yii::app()->user->isGuest),
+	array('label'=>'Delete Books', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?'), 'visible'=>!Yii::app()->user->isGuest),
+	array('label'=>'Manage Books', 'url'=>array('admin'), 'visible'=>!Yii::app()->user->isGuest),
 );
+endif;
 ?>
 
 <h1>View Books #<?php echo $model->id; ?></h1>
@@ -25,12 +28,12 @@ $this->menu=array(
 		'name',
 		'date_create',
 		'date_update',
-		[
+        [
             'name' => 'preview',
             'type' => 'raw',
-            'value'=> CHtml::image($this::PATH.$model->preview,$model->name,array(
-                'onclick'=>'fullSize',
-                'height' =>150,
+            'value'=> CHtml::image($model::PATH.$model->preview,$model->name,array(
+                'style'=>'max-height:500px;max-width:500px;',
+                /*'onclick'=>'',*/
             )),
         ],
 		'date',

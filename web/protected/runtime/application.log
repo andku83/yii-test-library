@@ -6944,3 +6944,1388 @@ REQUEST_URI=/index.php/books/admin
 in E:\_Projects\yii\web\protected\views\books\admin.php (99)
 in E:\_Projects\yii\web\protected\controllers\BooksController.php (206)
 in E:\_Projects\yii\web\index.php (13)
+2016/04/03 16:48:57 [error] [exception.CException] exception 'CException' with message 'Псевдоним "application.extensions.fancybox.EFancyBox" неверен. Убедитесь, что он указывает на существующий PHP файл.' in E:\_Projects\yii\framework\YiiBase.php:323
+Stack trace:
+#0 E:\_Projects\yii\framework\web\CWidgetFactory.php(146): YiiBase::import('application.ext...', true)
+#1 E:\_Projects\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(BooksController), 'application.ext...', Array)
+#2 E:\_Projects\yii\framework\web\CBaseController.php(180): CBaseController->createWidget('application.ext...', Array)
+#3 E:\_Projects\yii\web\protected\views\books\admin.php(32): CBaseController->widget('application.ext...', Array)
+#4 E:\_Projects\yii\framework\web\CBaseController.php(126): require('E:\\_Projects\\yi...')
+#5 E:\_Projects\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\_Projects\\yi...', Array, true)
+#6 E:\_Projects\yii\framework\web\CController.php(869): CBaseController->renderFile('E:\\_Projects\\yi...', Array, true)
+#7 E:\_Projects\yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#8 E:\_Projects\yii\web\protected\controllers\BooksController.php(203): CController->render('admin', Array)
+#9 E:\_Projects\yii\framework\web\actions\CInlineAction.php(49): BooksController->actionAdmin()
+#10 E:\_Projects\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 E:\_Projects\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 E:\_Projects\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 E:\_Projects\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 E:\_Projects\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 E:\_Projects\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 E:\_Projects\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 E:\_Projects\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 E:\_Projects\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#19 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('books/admin')
+#20 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 E:\_Projects\yii\web\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/index.php/books/admin
+HTTP_REFERER=http://yii.loc/index.php/books/153
+---
+2016/04/03 17:03:37 [error] [exception.CException] exception 'CException' with message 'Псевдоним "application.extensions.fancybox.EFancyBox" неверен. Убедитесь, что он указывает на существующий PHP файл.' in E:\_Projects\yii\framework\YiiBase.php:323
+Stack trace:
+#0 E:\_Projects\yii\framework\web\CWidgetFactory.php(146): YiiBase::import('application.ext...', true)
+#1 E:\_Projects\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(BooksController), 'application.ext...', Array)
+#2 E:\_Projects\yii\framework\web\CBaseController.php(180): CBaseController->createWidget('application.ext...', Array)
+#3 E:\_Projects\yii\web\protected\views\books\admin.php(32): CBaseController->widget('application.ext...', Array)
+#4 E:\_Projects\yii\framework\web\CBaseController.php(126): require('E:\\_Projects\\yi...')
+#5 E:\_Projects\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\_Projects\\yi...', Array, true)
+#6 E:\_Projects\yii\framework\web\CController.php(869): CBaseController->renderFile('E:\\_Projects\\yi...', Array, true)
+#7 E:\_Projects\yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#8 E:\_Projects\yii\web\protected\controllers\BooksController.php(203): CController->render('admin', Array)
+#9 E:\_Projects\yii\framework\web\actions\CInlineAction.php(49): BooksController->actionAdmin()
+#10 E:\_Projects\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 E:\_Projects\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 E:\_Projects\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 E:\_Projects\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 E:\_Projects\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 E:\_Projects\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 E:\_Projects\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 E:\_Projects\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 E:\_Projects\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#19 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('books/admin')
+#20 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 E:\_Projects\yii\web\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/index.php/books/admin
+HTTP_REFERER=http://yii.loc/index.php/books/153
+---
+2016/04/03 17:10:58 [error] [exception.CException] exception 'CException' with message 'Псевдоним "application.extensions.fancybox.EFancyBox" неверен. Убедитесь, что он указывает на существующий PHP файл.' in E:\_Projects\yii\framework\YiiBase.php:323
+Stack trace:
+#0 E:\_Projects\yii\framework\web\CWidgetFactory.php(146): YiiBase::import('application.ext...', true)
+#1 E:\_Projects\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(BooksController), 'application.ext...', Array)
+#2 E:\_Projects\yii\framework\web\CBaseController.php(180): CBaseController->createWidget('application.ext...', Array)
+#3 E:\_Projects\yii\web\protected\views\books\admin.php(32): CBaseController->widget('application.ext...', Array)
+#4 E:\_Projects\yii\framework\web\CBaseController.php(126): require('E:\\_Projects\\yi...')
+#5 E:\_Projects\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\_Projects\\yi...', Array, true)
+#6 E:\_Projects\yii\framework\web\CController.php(869): CBaseController->renderFile('E:\\_Projects\\yi...', Array, true)
+#7 E:\_Projects\yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#8 E:\_Projects\yii\web\protected\controllers\BooksController.php(203): CController->render('admin', Array)
+#9 E:\_Projects\yii\framework\web\actions\CInlineAction.php(49): BooksController->actionAdmin()
+#10 E:\_Projects\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 E:\_Projects\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 E:\_Projects\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 E:\_Projects\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 E:\_Projects\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 E:\_Projects\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 E:\_Projects\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 E:\_Projects\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 E:\_Projects\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#19 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('books/admin')
+#20 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 E:\_Projects\yii\web\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/index.php/books/admin
+HTTP_REFERER=http://yii.loc/index.php/books/153
+---
+2016/04/03 17:17:14 [error] [exception.CException] exception 'CException' with message 'Псевдоним "application.extensions.fancybox.EFancyBox" неверен. Убедитесь, что он указывает на существующий PHP файл.' in E:\_Projects\yii\framework\YiiBase.php:323
+Stack trace:
+#0 E:\_Projects\yii\framework\web\CWidgetFactory.php(146): YiiBase::import('application.ext...', true)
+#1 E:\_Projects\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(BooksController), 'application.ext...', Array)
+#2 E:\_Projects\yii\framework\web\CBaseController.php(180): CBaseController->createWidget('application.ext...', Array)
+#3 E:\_Projects\yii\web\protected\views\books\admin.php(32): CBaseController->widget('application.ext...', Array)
+#4 E:\_Projects\yii\framework\web\CBaseController.php(126): require('E:\\_Projects\\yi...')
+#5 E:\_Projects\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\_Projects\\yi...', Array, true)
+#6 E:\_Projects\yii\framework\web\CController.php(869): CBaseController->renderFile('E:\\_Projects\\yi...', Array, true)
+#7 E:\_Projects\yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#8 E:\_Projects\yii\web\protected\controllers\BooksController.php(203): CController->render('admin', Array)
+#9 E:\_Projects\yii\framework\web\actions\CInlineAction.php(49): BooksController->actionAdmin()
+#10 E:\_Projects\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 E:\_Projects\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 E:\_Projects\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 E:\_Projects\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 E:\_Projects\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 E:\_Projects\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 E:\_Projects\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 E:\_Projects\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 E:\_Projects\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#19 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('books/admin')
+#20 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 E:\_Projects\yii\web\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/index.php/books/admin
+HTTP_REFERER=http://yii.loc/index.php/books/153
+---
+2016/04/03 17:22:18 [error] [exception.CException] exception 'CException' with message 'Псевдоним "application.extensions.fancybox.EFancyBox" неверен. Убедитесь, что он указывает на существующий PHP файл.' in E:\_Projects\yii\framework\YiiBase.php:323
+Stack trace:
+#0 E:\_Projects\yii\framework\web\CWidgetFactory.php(146): YiiBase::import('application.ext...', true)
+#1 E:\_Projects\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(BooksController), 'application.ext...', Array)
+#2 E:\_Projects\yii\framework\web\CBaseController.php(180): CBaseController->createWidget('application.ext...', Array)
+#3 E:\_Projects\yii\web\protected\views\books\admin.php(32): CBaseController->widget('application.ext...', Array)
+#4 E:\_Projects\yii\framework\web\CBaseController.php(126): require('E:\\_Projects\\yi...')
+#5 E:\_Projects\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\_Projects\\yi...', Array, true)
+#6 E:\_Projects\yii\framework\web\CController.php(869): CBaseController->renderFile('E:\\_Projects\\yi...', Array, true)
+#7 E:\_Projects\yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#8 E:\_Projects\yii\web\protected\controllers\BooksController.php(203): CController->render('admin', Array)
+#9 E:\_Projects\yii\framework\web\actions\CInlineAction.php(49): BooksController->actionAdmin()
+#10 E:\_Projects\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 E:\_Projects\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 E:\_Projects\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 E:\_Projects\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 E:\_Projects\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 E:\_Projects\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 E:\_Projects\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 E:\_Projects\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 E:\_Projects\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#19 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('books/admin')
+#20 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 E:\_Projects\yii\web\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/index.php/books/admin
+HTTP_REFERER=http://yii.loc/index.php/books/153
+---
+2016/04/03 17:32:21 [error] [exception.CException] exception 'CException' with message 'Псевдоним "application.extensions.fancybox.EFancyBox" неверен. Убедитесь, что он указывает на существующий PHP файл.' in E:\_Projects\yii\framework\YiiBase.php:323
+Stack trace:
+#0 E:\_Projects\yii\framework\web\CWidgetFactory.php(146): YiiBase::import('application.ext...', true)
+#1 E:\_Projects\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(BooksController), 'application.ext...', Array)
+#2 E:\_Projects\yii\framework\web\CBaseController.php(180): CBaseController->createWidget('application.ext...', Array)
+#3 E:\_Projects\yii\web\protected\views\books\admin.php(32): CBaseController->widget('application.ext...', Array)
+#4 E:\_Projects\yii\framework\web\CBaseController.php(126): require('E:\\_Projects\\yi...')
+#5 E:\_Projects\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\_Projects\\yi...', Array, true)
+#6 E:\_Projects\yii\framework\web\CController.php(869): CBaseController->renderFile('E:\\_Projects\\yi...', Array, true)
+#7 E:\_Projects\yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#8 E:\_Projects\yii\web\protected\controllers\BooksController.php(203): CController->render('admin', Array)
+#9 E:\_Projects\yii\framework\web\actions\CInlineAction.php(49): BooksController->actionAdmin()
+#10 E:\_Projects\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 E:\_Projects\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 E:\_Projects\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 E:\_Projects\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 E:\_Projects\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 E:\_Projects\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 E:\_Projects\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 E:\_Projects\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 E:\_Projects\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#19 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('books/admin')
+#20 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 E:\_Projects\yii\web\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/index.php/books/admin?Books_sort=preview.desc
+HTTP_REFERER=http://yii.loc/index.php/books/admin?Books_sort=preview
+---
+2016/04/03 19:09:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in E:\_Projects\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\_Projects\yii\web\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2016/04/03 22:35:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in E:\_Projects\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\_Projects\yii\web\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2016/04/03 22:59:49 [error] [php] Undefined variable: date (E:\_Projects\yii\framework\base\CComponent.php(612) : eval()'d code:1)
+Stack trace:
+#0 E:\_Projects\yii\framework\zii\widgets\grid\CGridColumn.php(231): CDataColumn->getDataCellContent()
+#1 E:\_Projects\yii\framework\zii\widgets\grid\CGridColumn.php(154): CDataColumn->renderDataCellContent()
+#2 E:\_Projects\yii\framework\zii\widgets\grid\CGridView.php(638): CDataColumn->renderDataCell()
+#3 E:\_Projects\yii\framework\zii\widgets\grid\CGridView.php(622): CGridView->renderDataCell()
+#4 E:\_Projects\yii\framework\zii\widgets\grid\CGridView.php(578): CGridView->renderTableRow()
+#5 E:\_Projects\yii\framework\zii\widgets\grid\CGridView.php(488): CGridView->renderTableBody()
+#6 E:\_Projects\yii\framework\zii\widgets\CBaseListView.php(181): CGridView->renderItems()
+#7 unknown(0): CGridView->renderSection()
+#8 E:\_Projects\yii\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback()
+#9 E:\_Projects\yii\framework\zii\widgets\CBaseListView.php(149): CGridView->renderContent()
+#10 E:\_Projects\yii\framework\web\CBaseController.php(181): CGridView->run()
+#11 E:\_Projects\yii\web\protected\views\books\admin.php(161): BooksController->widget()
+#12 E:\_Projects\yii\framework\web\CBaseController.php(126): require()
+#13 E:\_Projects\yii\framework\web\CBaseController.php(95): BooksController->renderInternal()
+#14 E:\_Projects\yii\framework\web\CController.php(869): BooksController->renderFile()
+#15 E:\_Projects\yii\framework\web\CController.php(782): BooksController->renderPartial()
+#16 E:\_Projects\yii\web\protected\controllers\BooksController.php(203): BooksController->render()
+#17 E:\_Projects\yii\framework\web\actions\CInlineAction.php(49): BooksController->actionAdmin()
+#18 E:\_Projects\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#19 E:\_Projects\yii\framework\web\filters\CFilterChain.php(133): BooksController->runAction()
+#20 E:\_Projects\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#21 E:\_Projects\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#22 E:\_Projects\yii\framework\web\filters\CInlineFilter.php(58): BooksController->filterAccessControl()
+#23 E:\_Projects\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#24 E:\_Projects\yii\framework\web\CController.php(291): CFilterChain->run()
+#25 E:\_Projects\yii\framework\web\CController.php(265): BooksController->runActionWithFilters()
+#26 E:\_Projects\yii\framework\web\CWebApplication.php(282): BooksController->run()
+#27 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#28 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#29 E:\_Projects\yii\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/books/admin?Books_sort=preview.desc
+in E:\_Projects\yii\web\protected\views\books\admin.php (161)
+in E:\_Projects\yii\web\protected\controllers\BooksController.php (203)
+in E:\_Projects\yii\web\index.php (13)
+2016/04/03 23:00:00 [error] [php] Undefined variable: cs (E:\_Projects\yii\web\protected\views\layouts\main.php:3)
+Stack trace:
+#0 E:\_Projects\yii\framework\web\widgets\CContentDecorator.php(76): BooksController->renderFile()
+#1 E:\_Projects\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#2 E:\_Projects\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 E:\_Projects\yii\framework\web\CBaseController.php(214): CContentDecorator->run()
+#4 E:\_Projects\yii\framework\web\CBaseController.php(308): BooksController->endWidget()
+#5 E:\_Projects\yii\web\protected\views\layouts\column2.php(22): BooksController->endContent()
+#6 E:\_Projects\yii\framework\web\CBaseController.php(126): require()
+#7 E:\_Projects\yii\framework\web\CBaseController.php(95): BooksController->renderInternal()
+#8 E:\_Projects\yii\framework\web\CController.php(784): BooksController->renderFile()
+#9 E:\_Projects\yii\web\protected\controllers\BooksController.php(203): BooksController->render()
+#10 E:\_Projects\yii\framework\web\actions\CInlineAction.php(49): BooksController->actionAdmin()
+#11 E:\_Projects\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 E:\_Projects\yii\framework\web\filters\CFilterChain.php(133): BooksController->runAction()
+#13 E:\_Projects\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 E:\_Projects\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#15 E:\_Projects\yii\framework\web\filters\CInlineFilter.php(58): BooksController->filterAccessControl()
+#16 E:\_Projects\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#17 E:\_Projects\yii\framework\web\CController.php(291): CFilterChain->run()
+#18 E:\_Projects\yii\framework\web\CController.php(265): BooksController->runActionWithFilters()
+#19 E:\_Projects\yii\framework\web\CWebApplication.php(282): BooksController->run()
+#20 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#22 E:\_Projects\yii\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/books/admin?Books_sort=preview.desc
+in E:\_Projects\yii\web\protected\views\layouts\main.php (3)
+in E:\_Projects\yii\web\protected\views\layouts\column2.php (22)
+in E:\_Projects\yii\web\protected\controllers\BooksController.php (203)
+2016/04/03 23:02:34 [error] [php] Trying to get property of non-object (E:\_Projects\yii\web\protected\models\Books.php:118)
+Stack trace:
+#0 E:\_Projects\yii\framework\web\CBaseController.php(95): BooksController->renderInternal()
+#1 E:\_Projects\yii\framework\web\CController.php(869): BooksController->renderFile()
+#2 E:\_Projects\yii\framework\web\CController.php(782): BooksController->renderPartial()
+#3 E:\_Projects\yii\web\protected\controllers\BooksController.php(203): BooksController->render()
+#4 E:\_Projects\yii\framework\web\actions\CInlineAction.php(49): BooksController->actionAdmin()
+#5 E:\_Projects\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 E:\_Projects\yii\framework\web\filters\CFilterChain.php(133): BooksController->runAction()
+#7 E:\_Projects\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 E:\_Projects\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#9 E:\_Projects\yii\framework\web\filters\CInlineFilter.php(58): BooksController->filterAccessControl()
+#10 E:\_Projects\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#11 E:\_Projects\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 E:\_Projects\yii\framework\web\CController.php(265): BooksController->runActionWithFilters()
+#13 E:\_Projects\yii\framework\web\CWebApplication.php(282): BooksController->run()
+#14 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 E:\_Projects\yii\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/books/admin?Books_sort=author_id.desc
+in E:\_Projects\yii\web\protected\models\Books.php (118)
+in E:\_Projects\yii\web\protected\views\books\admin.php (67)
+in E:\_Projects\yii\web\protected\controllers\BooksController.php (203)
+2016/04/03 23:11:18 [error] [php] Trying to get property of non-object (E:\_Projects\yii\web\protected\models\Books.php:118)
+Stack trace:
+#0 E:\_Projects\yii\framework\web\CBaseController.php(95): BooksController->renderInternal()
+#1 E:\_Projects\yii\framework\web\CController.php(869): BooksController->renderFile()
+#2 E:\_Projects\yii\framework\web\CController.php(782): BooksController->renderPartial()
+#3 E:\_Projects\yii\web\protected\controllers\BooksController.php(203): BooksController->render()
+#4 E:\_Projects\yii\framework\web\actions\CInlineAction.php(49): BooksController->actionAdmin()
+#5 E:\_Projects\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 E:\_Projects\yii\framework\web\filters\CFilterChain.php(133): BooksController->runAction()
+#7 E:\_Projects\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 E:\_Projects\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#9 E:\_Projects\yii\framework\web\filters\CInlineFilter.php(58): BooksController->filterAccessControl()
+#10 E:\_Projects\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#11 E:\_Projects\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 E:\_Projects\yii\framework\web\CController.php(265): BooksController->runActionWithFilters()
+#13 E:\_Projects\yii\framework\web\CWebApplication.php(282): BooksController->run()
+#14 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 E:\_Projects\yii\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/books/admin?Books_sort=author_id.desc
+in E:\_Projects\yii\web\protected\models\Books.php (118)
+in E:\_Projects\yii\web\protected\views\books\admin.php (67)
+in E:\_Projects\yii\web\protected\controllers\BooksController.php (203)
+2016/04/03 23:11:41 [error] [php] Trying to get property of non-object (E:\_Projects\yii\web\protected\models\Books.php:118)
+Stack trace:
+#0 E:\_Projects\yii\framework\web\CBaseController.php(95): BooksController->renderInternal()
+#1 E:\_Projects\yii\framework\web\CController.php(869): BooksController->renderFile()
+#2 E:\_Projects\yii\framework\web\CController.php(782): BooksController->renderPartial()
+#3 E:\_Projects\yii\web\protected\controllers\BooksController.php(203): BooksController->render()
+#4 E:\_Projects\yii\framework\web\actions\CInlineAction.php(49): BooksController->actionAdmin()
+#5 E:\_Projects\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 E:\_Projects\yii\framework\web\filters\CFilterChain.php(133): BooksController->runAction()
+#7 E:\_Projects\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 E:\_Projects\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#9 E:\_Projects\yii\framework\web\filters\CInlineFilter.php(58): BooksController->filterAccessControl()
+#10 E:\_Projects\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#11 E:\_Projects\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 E:\_Projects\yii\framework\web\CController.php(265): BooksController->runActionWithFilters()
+#13 E:\_Projects\yii\framework\web\CWebApplication.php(282): BooksController->run()
+#14 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 E:\_Projects\yii\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/books/admin?Books_sort=author_id.desc
+in E:\_Projects\yii\web\protected\models\Books.php (118)
+in E:\_Projects\yii\web\protected\views\books\admin.php (67)
+in E:\_Projects\yii\web\protected\controllers\BooksController.php (203)
+2016/04/03 23:11:50 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "Books.fullName".' in E:\_Projects\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 E:\_Projects\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('fullName')
+#1 E:\_Projects\yii\web\protected\models\Books.php(118): CActiveRecord->__get('fullName')
+#2 E:\_Projects\yii\web\protected\views\books\admin.php(67): Books->search()
+#3 E:\_Projects\yii\framework\web\CBaseController.php(126): require('E:\\_Projects\\yi...')
+#4 E:\_Projects\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\_Projects\\yi...', Array, true)
+#5 E:\_Projects\yii\framework\web\CController.php(869): CBaseController->renderFile('E:\\_Projects\\yi...', Array, true)
+#6 E:\_Projects\yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#7 E:\_Projects\yii\web\protected\controllers\BooksController.php(203): CController->render('admin', Array)
+#8 E:\_Projects\yii\framework\web\actions\CInlineAction.php(49): BooksController->actionAdmin()
+#9 E:\_Projects\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 E:\_Projects\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 E:\_Projects\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 E:\_Projects\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 E:\_Projects\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 E:\_Projects\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 E:\_Projects\yii\framework\web\CController.php(291): CFilterChain->run()
+#16 E:\_Projects\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 E:\_Projects\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#18 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('books/admin')
+#19 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 E:\_Projects\yii\web\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php/books/admin?Books_sort=author_id.desc
+HTTP_REFERER=http://yii.loc/index.php/books/admin?Books_sort=author_id
+---
+2016/04/03 23:12:49 [error] [php] Trying to get property of non-object (E:\_Projects\yii\web\protected\models\Books.php:118)
+Stack trace:
+#0 E:\_Projects\yii\framework\web\CBaseController.php(95): BooksController->renderInternal()
+#1 E:\_Projects\yii\framework\web\CController.php(869): BooksController->renderFile()
+#2 E:\_Projects\yii\framework\web\CController.php(782): BooksController->renderPartial()
+#3 E:\_Projects\yii\web\protected\controllers\BooksController.php(203): BooksController->render()
+#4 E:\_Projects\yii\framework\web\actions\CInlineAction.php(49): BooksController->actionAdmin()
+#5 E:\_Projects\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 E:\_Projects\yii\framework\web\filters\CFilterChain.php(133): BooksController->runAction()
+#7 E:\_Projects\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 E:\_Projects\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#9 E:\_Projects\yii\framework\web\filters\CInlineFilter.php(58): BooksController->filterAccessControl()
+#10 E:\_Projects\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#11 E:\_Projects\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 E:\_Projects\yii\framework\web\CController.php(265): BooksController->runActionWithFilters()
+#13 E:\_Projects\yii\framework\web\CWebApplication.php(282): BooksController->run()
+#14 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 E:\_Projects\yii\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/books/admin?Books_sort=author_id.desc
+in E:\_Projects\yii\web\protected\models\Books.php (118)
+in E:\_Projects\yii\web\protected\views\books\admin.php (67)
+in E:\_Projects\yii\web\protected\controllers\BooksController.php (203)
+2016/04/03 23:14:50 [error] [php] Use of undefined constant fullName - assumed 'fullName' (E:\_Projects\yii\web\protected\models\Books.php:118)
+Stack trace:
+#0 E:\_Projects\yii\framework\web\CBaseController.php(95): BooksController->renderInternal()
+#1 E:\_Projects\yii\framework\web\CController.php(869): BooksController->renderFile()
+#2 E:\_Projects\yii\framework\web\CController.php(782): BooksController->renderPartial()
+#3 E:\_Projects\yii\web\protected\controllers\BooksController.php(203): BooksController->render()
+#4 E:\_Projects\yii\framework\web\actions\CInlineAction.php(49): BooksController->actionAdmin()
+#5 E:\_Projects\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 E:\_Projects\yii\framework\web\filters\CFilterChain.php(133): BooksController->runAction()
+#7 E:\_Projects\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 E:\_Projects\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#9 E:\_Projects\yii\framework\web\filters\CInlineFilter.php(58): BooksController->filterAccessControl()
+#10 E:\_Projects\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#11 E:\_Projects\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 E:\_Projects\yii\framework\web\CController.php(265): BooksController->runActionWithFilters()
+#13 E:\_Projects\yii\framework\web\CWebApplication.php(282): BooksController->run()
+#14 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 E:\_Projects\yii\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/books/admin?Books%5Bauthor_id%5D=&Books%5Bname%5D=&yt0=%D0%98%D1%81%D0%BA%D0%B0%D1%82%D1%8C
+in E:\_Projects\yii\web\protected\models\Books.php (118)
+in E:\_Projects\yii\web\protected\views\books\admin.php (67)
+in E:\_Projects\yii\web\protected\controllers\BooksController.php (203)
+2016/04/03 23:14:57 [error] [php] Trying to get property of non-object (E:\_Projects\yii\web\protected\models\Books.php:118)
+Stack trace:
+#0 E:\_Projects\yii\framework\web\CBaseController.php(95): BooksController->renderInternal()
+#1 E:\_Projects\yii\framework\web\CController.php(869): BooksController->renderFile()
+#2 E:\_Projects\yii\framework\web\CController.php(782): BooksController->renderPartial()
+#3 E:\_Projects\yii\web\protected\controllers\BooksController.php(203): BooksController->render()
+#4 E:\_Projects\yii\framework\web\actions\CInlineAction.php(49): BooksController->actionAdmin()
+#5 E:\_Projects\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 E:\_Projects\yii\framework\web\filters\CFilterChain.php(133): BooksController->runAction()
+#7 E:\_Projects\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 E:\_Projects\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#9 E:\_Projects\yii\framework\web\filters\CInlineFilter.php(58): BooksController->filterAccessControl()
+#10 E:\_Projects\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#11 E:\_Projects\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 E:\_Projects\yii\framework\web\CController.php(265): BooksController->runActionWithFilters()
+#13 E:\_Projects\yii\framework\web\CWebApplication.php(282): BooksController->run()
+#14 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 E:\_Projects\yii\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/books/admin?Books%5Bauthor_id%5D=&Books%5Bname%5D=&yt0=%D0%98%D1%81%D0%BA%D0%B0%D1%82%D1%8C
+in E:\_Projects\yii\web\protected\models\Books.php (118)
+in E:\_Projects\yii\web\protected\views\books\admin.php (67)
+in E:\_Projects\yii\web\protected\controllers\BooksController.php (203)
+2016/04/03 23:17:11 [error] [php] Trying to get property of non-object (E:\_Projects\yii\web\protected\models\Books.php:118)
+Stack trace:
+#0 E:\_Projects\yii\framework\web\CBaseController.php(95): BooksController->renderInternal()
+#1 E:\_Projects\yii\framework\web\CController.php(869): BooksController->renderFile()
+#2 E:\_Projects\yii\framework\web\CController.php(782): BooksController->renderPartial()
+#3 E:\_Projects\yii\web\protected\controllers\BooksController.php(203): BooksController->render()
+#4 E:\_Projects\yii\framework\web\actions\CInlineAction.php(49): BooksController->actionAdmin()
+#5 E:\_Projects\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 E:\_Projects\yii\framework\web\filters\CFilterChain.php(133): BooksController->runAction()
+#7 E:\_Projects\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 E:\_Projects\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#9 E:\_Projects\yii\framework\web\filters\CInlineFilter.php(58): BooksController->filterAccessControl()
+#10 E:\_Projects\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#11 E:\_Projects\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 E:\_Projects\yii\framework\web\CController.php(265): BooksController->runActionWithFilters()
+#13 E:\_Projects\yii\framework\web\CWebApplication.php(282): BooksController->run()
+#14 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 E:\_Projects\yii\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/books/admin?Books%5Bauthor_id%5D=&Books%5Bname%5D=&yt0=%D0%98%D1%81%D0%BA%D0%B0%D1%82%D1%8C
+in E:\_Projects\yii\web\protected\models\Books.php (118)
+in E:\_Projects\yii\web\protected\views\books\admin.php (67)
+in E:\_Projects\yii\web\protected\controllers\BooksController.php (203)
+2016/04/03 23:17:24 [error] [php] Trying to get property of non-object (E:\_Projects\yii\web\protected\models\Books.php:118)
+Stack trace:
+#0 E:\_Projects\yii\framework\web\CBaseController.php(95): BooksController->renderInternal()
+#1 E:\_Projects\yii\framework\web\CController.php(869): BooksController->renderFile()
+#2 E:\_Projects\yii\framework\web\CController.php(782): BooksController->renderPartial()
+#3 E:\_Projects\yii\web\protected\controllers\BooksController.php(203): BooksController->render()
+#4 E:\_Projects\yii\framework\web\actions\CInlineAction.php(49): BooksController->actionAdmin()
+#5 E:\_Projects\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 E:\_Projects\yii\framework\web\filters\CFilterChain.php(133): BooksController->runAction()
+#7 E:\_Projects\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 E:\_Projects\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#9 E:\_Projects\yii\framework\web\filters\CInlineFilter.php(58): BooksController->filterAccessControl()
+#10 E:\_Projects\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#11 E:\_Projects\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 E:\_Projects\yii\framework\web\CController.php(265): BooksController->runActionWithFilters()
+#13 E:\_Projects\yii\framework\web\CWebApplication.php(282): BooksController->run()
+#14 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 E:\_Projects\yii\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/books/admin?Books%5Bauthor_id%5D=&Books%5Bname%5D=&yt0=%D0%98%D1%81%D0%BA%D0%B0%D1%82%D1%8C
+in E:\_Projects\yii\web\protected\models\Books.php (118)
+in E:\_Projects\yii\web\protected\views\books\admin.php (67)
+in E:\_Projects\yii\web\protected\controllers\BooksController.php (203)
+2016/04/03 23:31:10 [error] [php] Undefined variable: data (E:\_Projects\yii\web\protected\views\books\admin.php:105)
+Stack trace:
+#0 E:\_Projects\yii\framework\web\CController.php(869): BooksController->renderFile()
+#1 E:\_Projects\yii\framework\web\CController.php(782): BooksController->renderPartial()
+#2 E:\_Projects\yii\web\protected\controllers\BooksController.php(203): BooksController->render()
+#3 E:\_Projects\yii\framework\web\actions\CInlineAction.php(49): BooksController->actionAdmin()
+#4 E:\_Projects\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\_Projects\yii\framework\web\filters\CFilterChain.php(133): BooksController->runAction()
+#6 E:\_Projects\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 E:\_Projects\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 E:\_Projects\yii\framework\web\filters\CInlineFilter.php(58): BooksController->filterAccessControl()
+#9 E:\_Projects\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 E:\_Projects\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 E:\_Projects\yii\framework\web\CController.php(265): BooksController->runActionWithFilters()
+#12 E:\_Projects\yii\framework\web\CWebApplication.php(282): BooksController->run()
+#13 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 E:\_Projects\yii\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/books/admin?Books%5Bauthor_id%5D=&Books%5Bname%5D=&yt0=%D0%98%D1%81%D0%BA%D0%B0%D1%82%D1%8C
+in E:\_Projects\yii\web\protected\views\books\admin.php (105)
+in E:\_Projects\yii\web\protected\controllers\BooksController.php (203)
+in E:\_Projects\yii\web\index.php (13)
+2016/04/03 23:39:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "js/fancybox/jquery.fancybox-1.3.1.css".' in E:\_Projects\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('js/fancybox/jqu...')
+#1 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\_Projects\yii\web\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/fancybox/jquery.fancybox-1.3.1.css
+HTTP_REFERER=http://yii.loc/index.php/books/admin?Books%5Bauthor_id%5D=&Books%5Bname%5D=&yt0=%D0%98%D1%81%D0%BA%D0%B0%D1%82%D1%8C
+---
+2016/04/03 23:39:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "js/fancybox/jquery.fancybox-1.3.1.pack.js".' in E:\_Projects\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('js/fancybox/jqu...')
+#1 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\_Projects\yii\web\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/fancybox/jquery.fancybox-1.3.1.pack.js
+HTTP_REFERER=http://yii.loc/index.php/books/admin?Books%5Bauthor_id%5D=&Books%5Bname%5D=&yt0=%D0%98%D1%81%D0%BA%D0%B0%D1%82%D1%8C
+---
+2016/04/03 23:41:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "assets".' in E:\_Projects\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\_Projects\yii\framework\web\CController.php(270): CController->missingAction('assets')
+#1 E:\_Projects\yii\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('books/assets/e7...')
+#3 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 E:\_Projects\yii\web\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/books/assets/e7e88703/js/fancybox/jquery.fancybox-1.3.1.css
+HTTP_REFERER=http://yii.loc/index.php/books/admin?Books%5Bauthor_id%5D=&Books%5Bname%5D=&yt0=%D0%98%D1%81%D0%BA%D0%B0%D1%82%D1%8C
+---
+2016/04/03 23:41:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "assets".' in E:\_Projects\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\_Projects\yii\framework\web\CController.php(270): CController->missingAction('assets')
+#1 E:\_Projects\yii\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('books/assets/e7...')
+#3 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 E:\_Projects\yii\web\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/books/assets/e7e88703/js/fancybox/jquery.fancybox-1.3.1.pack.js
+HTTP_REFERER=http://yii.loc/index.php/books/admin?Books%5Bauthor_id%5D=&Books%5Bname%5D=&yt0=%D0%98%D1%81%D0%BA%D0%B0%D1%82%D1%8C
+---
+2016/04/03 23:51:55 [error] [php] Object of class Authors could not be converted to string (E:\_Projects\yii\framework\db\schema\CDbCriteria.php:257)
+Stack trace:
+#0 E:\_Projects\yii\framework\web\CBaseController.php(126): require()
+#1 E:\_Projects\yii\framework\web\CBaseController.php(95): BooksController->renderInternal()
+#2 E:\_Projects\yii\framework\web\CController.php(869): BooksController->renderFile()
+#3 E:\_Projects\yii\framework\web\CController.php(782): BooksController->renderPartial()
+#4 E:\_Projects\yii\web\protected\controllers\BooksController.php(203): BooksController->render()
+#5 E:\_Projects\yii\framework\web\actions\CInlineAction.php(49): BooksController->actionAdmin()
+#6 E:\_Projects\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 E:\_Projects\yii\framework\web\filters\CFilterChain.php(133): BooksController->runAction()
+#8 E:\_Projects\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 E:\_Projects\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 E:\_Projects\yii\framework\web\filters\CInlineFilter.php(58): BooksController->filterAccessControl()
+#11 E:\_Projects\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 E:\_Projects\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 E:\_Projects\yii\framework\web\CController.php(265): BooksController->runActionWithFilters()
+#14 E:\_Projects\yii\framework\web\CWebApplication.php(282): BooksController->run()
+#15 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 E:\_Projects\yii\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/books/admin?Books%5Bauthor_id%5D=2&Books%5Bname%5D=&ajax=books-grid&yt0=%D0%98%D1%81%D0%BA%D0%B0%D1%82%D1%8C
+in E:\_Projects\yii\web\protected\models\Books.php (109)
+in E:\_Projects\yii\web\protected\views\books\admin.php (67)
+in E:\_Projects\yii\web\protected\controllers\BooksController.php (203)
+2016/04/03 23:52:22 [error] [php] Object of class Authors could not be converted to string (E:\_Projects\yii\framework\db\schema\CDbCriteria.php:257)
+Stack trace:
+#0 E:\_Projects\yii\framework\web\CBaseController.php(126): require()
+#1 E:\_Projects\yii\framework\web\CBaseController.php(95): BooksController->renderInternal()
+#2 E:\_Projects\yii\framework\web\CController.php(869): BooksController->renderFile()
+#3 E:\_Projects\yii\framework\web\CController.php(782): BooksController->renderPartial()
+#4 E:\_Projects\yii\web\protected\controllers\BooksController.php(203): BooksController->render()
+#5 E:\_Projects\yii\framework\web\actions\CInlineAction.php(49): BooksController->actionAdmin()
+#6 E:\_Projects\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 E:\_Projects\yii\framework\web\filters\CFilterChain.php(133): BooksController->runAction()
+#8 E:\_Projects\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 E:\_Projects\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 E:\_Projects\yii\framework\web\filters\CInlineFilter.php(58): BooksController->filterAccessControl()
+#11 E:\_Projects\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 E:\_Projects\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 E:\_Projects\yii\framework\web\CController.php(265): BooksController->runActionWithFilters()
+#14 E:\_Projects\yii\framework\web\CWebApplication.php(282): BooksController->run()
+#15 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 E:\_Projects\yii\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/books/admin?Books%5Bauthor_id%5D=2&Books%5Bname%5D=&ajax=books-grid&yt0=%D0%98%D1%81%D0%BA%D0%B0%D1%82%D1%8C
+in E:\_Projects\yii\web\protected\models\Books.php (109)
+in E:\_Projects\yii\web\protected\views\books\admin.php (67)
+in E:\_Projects\yii\web\protected\controllers\BooksController.php (203)
+2016/04/03 23:53:22 [error] [php] Object of class Authors could not be converted to string (E:\_Projects\yii\framework\db\schema\CDbCriteria.php:257)
+Stack trace:
+#0 E:\_Projects\yii\framework\web\CBaseController.php(126): require()
+#1 E:\_Projects\yii\framework\web\CBaseController.php(95): BooksController->renderInternal()
+#2 E:\_Projects\yii\framework\web\CController.php(869): BooksController->renderFile()
+#3 E:\_Projects\yii\framework\web\CController.php(782): BooksController->renderPartial()
+#4 E:\_Projects\yii\web\protected\controllers\BooksController.php(203): BooksController->render()
+#5 E:\_Projects\yii\framework\web\actions\CInlineAction.php(49): BooksController->actionAdmin()
+#6 E:\_Projects\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 E:\_Projects\yii\framework\web\filters\CFilterChain.php(133): BooksController->runAction()
+#8 E:\_Projects\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 E:\_Projects\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 E:\_Projects\yii\framework\web\filters\CInlineFilter.php(58): BooksController->filterAccessControl()
+#11 E:\_Projects\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 E:\_Projects\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 E:\_Projects\yii\framework\web\CController.php(265): BooksController->runActionWithFilters()
+#14 E:\_Projects\yii\framework\web\CWebApplication.php(282): BooksController->run()
+#15 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 E:\_Projects\yii\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/books/admin?Books%5Bauthor_id%5D=2&Books%5Bname%5D=&ajax=books-grid&yt0=%D0%98%D1%81%D0%BA%D0%B0%D1%82%D1%8C
+in E:\_Projects\yii\web\protected\models\Books.php (109)
+in E:\_Projects\yii\web\protected\views\books\admin.php (67)
+in E:\_Projects\yii\web\protected\controllers\BooksController.php (203)
+2016/04/04 00:14:14 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchColumn(): SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ы' in 'where clause'. Выполнявшийся SQL-запрос: SELECT COUNT(DISTINCT `t`.`id`) FROM `yii_books` `t`  LEFT OUTER JOIN `yii_authors` `author` ON (`t`.`author_id`=`author`.`id`) WHERE ((ы LIKE :ycp0) AND (name LIKE :ycp1)).
+in E:\_Projects\yii\web\protected\views\books\admin.php (193)
+in E:\_Projects\yii\web\protected\controllers\BooksController.php (203)
+in E:\_Projects\yii\web\index.php (13)
+2016/04/04 00:14:14 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ы' in 'where clause'. The SQL statement executed was: SELECT COUNT(DISTINCT `t`.`id`) FROM `yii_books` `t`  LEFT OUTER JOIN `yii_authors` `author` ON (`t`.`author_id`=`author`.`id`) WHERE ((ы LIKE :ycp0) AND (name LIKE :ycp1))' in E:\_Projects\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 E:\_Projects\yii\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 E:\_Projects\yii\framework\db\ar\CActiveFinder.php(764): CDbCommand->queryScalar()
+#2 E:\_Projects\yii\framework\db\ar\CActiveFinder.php(151): CJoinElement->count(Object(CDbCriteria))
+#3 E:\_Projects\yii\framework\db\ar\CActiveRecord.php(1610): CActiveFinder->count(Object(CDbCriteria))
+#4 E:\_Projects\yii\framework\web\CActiveDataProvider.php(228): CActiveRecord->count(Object(CDbCriteria))
+#5 E:\_Projects\yii\framework\web\CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#6 E:\_Projects\yii\framework\web\CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#7 E:\_Projects\yii\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#8 E:\_Projects\yii\framework\zii\widgets\CBaseListView.php(125): CDataProvider->getData()
+#9 E:\_Projects\yii\framework\zii\widgets\grid\CGridView.php(339): CBaseListView->init()
+#10 E:\_Projects\yii\framework\web\CBaseController.php(147): CGridView->init()
+#11 E:\_Projects\yii\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.gri...', Array)
+#12 E:\_Projects\yii\web\protected\views\books\admin.php(193): CBaseController->widget('zii.widgets.gri...', Array)
+#13 E:\_Projects\yii\framework\web\CBaseController.php(126): require('E:\\_Projects\\yi...')
+#14 E:\_Projects\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\_Projects\\yi...', Array, true)
+#15 E:\_Projects\yii\framework\web\CController.php(869): CBaseController->renderFile('E:\\_Projects\\yi...', Array, true)
+#16 E:\_Projects\yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#17 E:\_Projects\yii\web\protected\controllers\BooksController.php(203): CController->render('admin', Array)
+#18 E:\_Projects\yii\framework\web\actions\CInlineAction.php(49): BooksController->actionAdmin()
+#19 E:\_Projects\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#20 E:\_Projects\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#21 E:\_Projects\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#22 E:\_Projects\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#23 E:\_Projects\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#24 E:\_Projects\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#25 E:\_Projects\yii\framework\web\CController.php(291): CFilterChain->run()
+#26 E:\_Projects\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#27 E:\_Projects\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#28 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('books/admin')
+#29 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#30 E:\_Projects\yii\web\index.php(13): CApplication->run()
+#31 {main}
+REQUEST_URI=/index.php/books/admin?Books%5Bauthor_id%5D=&Books%5Bname%5D=%D1%8B&ajax=books-grid&yt0=%D0%98%D1%81%D0%BA%D0%B0%D1%82%D1%8C
+HTTP_REFERER=http://yii.loc/index.php/books/admin?Books%5Bauthor_id%5D=&Books%5Bname%5D=&yt0=%D0%98%D1%81%D0%BA%D0%B0%D1%82%D1%8C
+---
+2016/04/04 00:20:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "amin".' in E:\_Projects\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\_Projects\yii\framework\web\CController.php(270): CController->missingAction('amin')
+#1 E:\_Projects\yii\framework\web\CWebApplication.php(282): CController->run('amin')
+#2 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('books/amin')
+#3 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 E:\_Projects\yii\web\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/books/amin?Boos%5Bauthor_id%5D=&Books%5Bname%5D=&yt0=%D0%98%D1%81%D0%BA%D0%B0%D1%82%D1%8C
+---
+2016/04/04 00:20:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "amin".' in E:\_Projects\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\_Projects\yii\framework\web\CController.php(270): CController->missingAction('amin')
+#1 E:\_Projects\yii\framework\web\CWebApplication.php(282): CController->run('amin')
+#2 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('books/amin')
+#3 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 E:\_Projects\yii\web\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/books/amin?Boos%5Bauthor_id%5D=&Books%5Bname%5D=&yt0=%D0%98%D1%81%D0%BA%D0%B0%D1%82%D1%8C
+---
+2016/04/04 00:20:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "amin".' in E:\_Projects\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\_Projects\yii\framework\web\CController.php(270): CController->missingAction('amin')
+#1 E:\_Projects\yii\framework\web\CWebApplication.php(282): CController->run('amin')
+#2 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('books/amin')
+#3 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 E:\_Projects\yii\web\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/books/amin?Boos%5Bauthor_id%5D=&Books%5Bname%5D=&yt0=%D0%98%D1%81%D0%BA%D0%B0%D1%82%D1%8C
+---
+2016/04/04 01:01:22 [error] [exception.CException] exception 'CException' with message 'image file not found' in E:\_Projects\yii\web\protected\extensions\image\Image.php:78
+Stack trace:
+#0 E:\_Projects\yii\web\protected\extensions\image\CImageComponent.php(41): Image->__construct('E:\\_Projects\\yi...', Array)
+#1 E:\_Projects\yii\web\protected\controllers\BooksController.php(236): CImageComponent->load('E:\\_Projects\\yi...')
+#2 E:\_Projects\yii\web\protected\controllers\BooksController.php(100): BooksController->resize('E:\\_Projects\\yi...')
+#3 E:\_Projects\yii\framework\web\actions\CInlineAction.php(49): BooksController->actionCreate()
+#4 E:\_Projects\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 E:\_Projects\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 E:\_Projects\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 E:\_Projects\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 E:\_Projects\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 E:\_Projects\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 E:\_Projects\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 E:\_Projects\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 E:\_Projects\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('books/create')
+#14 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 E:\_Projects\yii\web\index-test.php(15): CApplication->run()
+#16 {main}
+REQUEST_URI=/index-test.php/books/create
+HTTP_REFERER=http://yii.loc/index-test.php/books/create
+---
+2016/04/04 01:02:30 [error] [php] Undefined variable: data (E:\_Projects\yii\web\protected\views\books\view.php:31)
+Stack trace:
+#0 E:\_Projects\yii\framework\web\CController.php(869): BooksController->renderFile()
+#1 E:\_Projects\yii\framework\web\CController.php(782): BooksController->renderPartial()
+#2 E:\_Projects\yii\web\protected\controllers\BooksController.php(56): BooksController->render()
+#3 unknown(0): BooksController->actionView()
+#4 E:\_Projects\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#5 E:\_Projects\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 E:\_Projects\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 E:\_Projects\yii\framework\web\filters\CFilterChain.php(133): BooksController->runAction()
+#8 E:\_Projects\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 E:\_Projects\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 E:\_Projects\yii\framework\web\filters\CInlineFilter.php(58): BooksController->filterAccessControl()
+#11 E:\_Projects\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 E:\_Projects\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 E:\_Projects\yii\framework\web\CController.php(265): BooksController->runActionWithFilters()
+#14 E:\_Projects\yii\framework\web\CWebApplication.php(282): BooksController->run()
+#15 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 E:\_Projects\yii\web\index-test.php(15): CWebApplication->run()
+REQUEST_URI=/index-test.php/books/155
+2016/04/04 01:02:41 [error] [php] Undefined variable: data (E:\_Projects\yii\web\protected\views\books\view.php:31)
+Stack trace:
+#0 E:\_Projects\yii\framework\web\CController.php(869): BooksController->renderFile()
+#1 E:\_Projects\yii\framework\web\CController.php(782): BooksController->renderPartial()
+#2 E:\_Projects\yii\web\protected\controllers\BooksController.php(56): BooksController->render()
+#3 unknown(0): BooksController->actionView()
+#4 E:\_Projects\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#5 E:\_Projects\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 E:\_Projects\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 E:\_Projects\yii\framework\web\filters\CFilterChain.php(133): BooksController->runAction()
+#8 E:\_Projects\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 E:\_Projects\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 E:\_Projects\yii\framework\web\filters\CInlineFilter.php(58): BooksController->filterAccessControl()
+#11 E:\_Projects\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 E:\_Projects\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 E:\_Projects\yii\framework\web\CController.php(265): BooksController->runActionWithFilters()
+#14 E:\_Projects\yii\framework\web\CWebApplication.php(282): BooksController->run()
+#15 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 E:\_Projects\yii\web\index-test.php(15): CWebApplication->run()
+REQUEST_URI=/index-test.php/books/155
+2016/04/04 01:02:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "uploaded/images/book_154_1459724481.JPG".' in E:\_Projects\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('uploaded/images...')
+#1 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\_Projects\yii\web\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/uploaded/images/book_154_1459724481.JPG
+HTTP_REFERER=http://yii.loc/index-test.php/books/admin
+---
+2016/04/04 01:03:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "uploaded/images/book_154_1459724481.JPG".' in E:\_Projects\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('uploaded/images...')
+#1 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\_Projects\yii\web\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/uploaded/images/book_154_1459724481.JPG
+HTTP_REFERER=http://yii.loc/index-test.php/books/admin
+---
+2016/04/04 01:03:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "uploaded/images/book_154_1459724481.JPG".' in E:\_Projects\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('uploaded/images...')
+#1 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\_Projects\yii\web\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/uploaded/images/book_154_1459724481.JPG
+HTTP_REFERER=http://yii.loc/index-test.php/books/admin
+---
+2016/04/04 01:09:41 [error] [php] Undefined variable: maxHeight (E:\_Projects\yii\web\protected\views\books\admin.php:68)
+Stack trace:
+#0 E:\_Projects\yii\framework\web\CController.php(869): BooksController->renderFile()
+#1 E:\_Projects\yii\framework\web\CController.php(782): BooksController->renderPartial()
+#2 E:\_Projects\yii\web\protected\controllers\BooksController.php(203): BooksController->render()
+#3 E:\_Projects\yii\framework\web\actions\CInlineAction.php(49): BooksController->actionAdmin()
+#4 E:\_Projects\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\_Projects\yii\framework\web\filters\CFilterChain.php(133): BooksController->runAction()
+#6 E:\_Projects\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 E:\_Projects\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 E:\_Projects\yii\framework\web\filters\CInlineFilter.php(58): BooksController->filterAccessControl()
+#9 E:\_Projects\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 E:\_Projects\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 E:\_Projects\yii\framework\web\CController.php(265): BooksController->runActionWithFilters()
+#12 E:\_Projects\yii\framework\web\CWebApplication.php(282): BooksController->run()
+#13 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 E:\_Projects\yii\web\index-test.php(15): CWebApplication->run()
+REQUEST_URI=/index-test.php/books/admin
+2016/04/04 01:20:56 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (E:\_Projects\yii\framework\web\helpers\CHtml.php:108)
+Stack trace:
+#0 E:\_Projects\yii\framework\web\helpers\CHtml.php(163): renderAttributes()
+#1 E:\_Projects\yii\framework\web\helpers\CHtml.php(457): tag()
+#2 E:\_Projects\yii\web\protected\views\books\_view.php(28): image()
+#3 E:\_Projects\yii\framework\web\CBaseController.php(130): require()
+#4 E:\_Projects\yii\framework\web\CBaseController.php(95): BooksController->renderInternal()
+#5 E:\_Projects\yii\framework\zii\widgets\CListView.php(291): BooksController->renderFile()
+#6 E:\_Projects\yii\framework\zii\widgets\CBaseListView.php(181): CListView->renderItems()
+#7 unknown(0): CListView->renderSection()
+#8 E:\_Projects\yii\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback()
+#9 E:\_Projects\yii\framework\zii\widgets\CBaseListView.php(149): CListView->renderContent()
+#10 E:\_Projects\yii\framework\web\CBaseController.php(181): CListView->run()
+#11 E:\_Projects\yii\web\protected\views\books\index.php(20): BooksController->widget()
+#12 E:\_Projects\yii\framework\web\CBaseController.php(126): require()
+#13 E:\_Projects\yii\framework\web\CBaseController.php(95): BooksController->renderInternal()
+#14 E:\_Projects\yii\framework\web\CController.php(869): BooksController->renderFile()
+#15 E:\_Projects\yii\framework\web\CController.php(782): BooksController->renderPartial()
+#16 E:\_Projects\yii\web\protected\controllers\BooksController.php(188): BooksController->render()
+#17 E:\_Projects\yii\framework\web\actions\CInlineAction.php(49): BooksController->actionIndex()
+#18 E:\_Projects\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#19 E:\_Projects\yii\framework\web\filters\CFilterChain.php(133): BooksController->runAction()
+#20 E:\_Projects\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#21 E:\_Projects\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#22 E:\_Projects\yii\framework\web\filters\CInlineFilter.php(58): BooksController->filterAccessControl()
+#23 E:\_Projects\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#24 E:\_Projects\yii\framework\web\CController.php(291): CFilterChain->run()
+#25 E:\_Projects\yii\framework\web\CController.php(265): BooksController->runActionWithFilters()
+#26 E:\_Projects\yii\framework\web\CWebApplication.php(282): BooksController->run()
+#27 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#28 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#29 E:\_Projects\yii\web\index-test.php(15): CWebApplication->run()
+REQUEST_URI=/index-test.php/books/index
+2016/04/04 01:40:05 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/04 01:40:05 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/05 00:41:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in E:\_Projects\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\_Projects\yii\web\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://yii.loc/index-test.php/site/login
+---
+2016/04/05 01:26:42 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "CButtonColumn.viewButtonUrlClick".' in E:\_Projects\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 E:\_Projects\yii\framework\YiiBase.php(220): CComponent->__set('viewButtonUrlCl...', '$("#viewmodal")...')
+#1 E:\_Projects\yii\framework\zii\widgets\grid\CGridView.php(388): YiiBase::createComponent(Array, Object(CGridView))
+#2 E:\_Projects\yii\framework\zii\widgets\grid\CGridView.php(359): CGridView->initColumns()
+#3 E:\_Projects\yii\framework\web\CBaseController.php(147): CGridView->init()
+#4 E:\_Projects\yii\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.gri...', Array)
+#5 E:\_Projects\yii\web\protected\views\books\admin.php(175): CBaseController->widget('zii.widgets.gri...', Array)
+#6 E:\_Projects\yii\framework\web\CBaseController.php(126): require('E:\\_Projects\\yi...')
+#7 E:\_Projects\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\_Projects\\yi...', Array, true)
+#8 E:\_Projects\yii\framework\web\CController.php(869): CBaseController->renderFile('E:\\_Projects\\yi...', Array, true)
+#9 E:\_Projects\yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#10 E:\_Projects\yii\web\protected\controllers\BooksController.php(203): CController->render('admin', Array)
+#11 E:\_Projects\yii\framework\web\actions\CInlineAction.php(49): BooksController->actionAdmin()
+#12 E:\_Projects\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 E:\_Projects\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 E:\_Projects\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 E:\_Projects\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 E:\_Projects\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 E:\_Projects\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 E:\_Projects\yii\framework\web\CController.php(291): CFilterChain->run()
+#19 E:\_Projects\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 E:\_Projects\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#21 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('books/admin')
+#22 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 E:\_Projects\yii\web\index-test.php(15): CApplication->run()
+#24 {main}
+REQUEST_URI=/index-test.php/books/admin
+HTTP_REFERER=http://yii.loc/index-test.php/site/login
+---
+2016/04/05 01:26:51 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "CButtonColumn.viewButtonClick".' in E:\_Projects\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 E:\_Projects\yii\framework\YiiBase.php(220): CComponent->__set('viewButtonClick', '$("#viewmodal")...')
+#1 E:\_Projects\yii\framework\zii\widgets\grid\CGridView.php(388): YiiBase::createComponent(Array, Object(CGridView))
+#2 E:\_Projects\yii\framework\zii\widgets\grid\CGridView.php(359): CGridView->initColumns()
+#3 E:\_Projects\yii\framework\web\CBaseController.php(147): CGridView->init()
+#4 E:\_Projects\yii\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.gri...', Array)
+#5 E:\_Projects\yii\web\protected\views\books\admin.php(175): CBaseController->widget('zii.widgets.gri...', Array)
+#6 E:\_Projects\yii\framework\web\CBaseController.php(126): require('E:\\_Projects\\yi...')
+#7 E:\_Projects\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\_Projects\\yi...', Array, true)
+#8 E:\_Projects\yii\framework\web\CController.php(869): CBaseController->renderFile('E:\\_Projects\\yi...', Array, true)
+#9 E:\_Projects\yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#10 E:\_Projects\yii\web\protected\controllers\BooksController.php(203): CController->render('admin', Array)
+#11 E:\_Projects\yii\framework\web\actions\CInlineAction.php(49): BooksController->actionAdmin()
+#12 E:\_Projects\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 E:\_Projects\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 E:\_Projects\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 E:\_Projects\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 E:\_Projects\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 E:\_Projects\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 E:\_Projects\yii\framework\web\CController.php(291): CFilterChain->run()
+#19 E:\_Projects\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 E:\_Projects\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#21 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('books/admin')
+#22 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 E:\_Projects\yii\web\index-test.php(15): CApplication->run()
+#24 {main}
+REQUEST_URI=/index-test.php/books/admin
+HTTP_REFERER=http://yii.loc/index-test.php/site/login
+---
+2016/04/05 01:26:59 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "CButtonColumn.viewButtonOnClick".' in E:\_Projects\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 E:\_Projects\yii\framework\YiiBase.php(220): CComponent->__set('viewButtonOnCli...', '$("#viewmodal")...')
+#1 E:\_Projects\yii\framework\zii\widgets\grid\CGridView.php(388): YiiBase::createComponent(Array, Object(CGridView))
+#2 E:\_Projects\yii\framework\zii\widgets\grid\CGridView.php(359): CGridView->initColumns()
+#3 E:\_Projects\yii\framework\web\CBaseController.php(147): CGridView->init()
+#4 E:\_Projects\yii\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.gri...', Array)
+#5 E:\_Projects\yii\web\protected\views\books\admin.php(175): CBaseController->widget('zii.widgets.gri...', Array)
+#6 E:\_Projects\yii\framework\web\CBaseController.php(126): require('E:\\_Projects\\yi...')
+#7 E:\_Projects\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\_Projects\\yi...', Array, true)
+#8 E:\_Projects\yii\framework\web\CController.php(869): CBaseController->renderFile('E:\\_Projects\\yi...', Array, true)
+#9 E:\_Projects\yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#10 E:\_Projects\yii\web\protected\controllers\BooksController.php(203): CController->render('admin', Array)
+#11 E:\_Projects\yii\framework\web\actions\CInlineAction.php(49): BooksController->actionAdmin()
+#12 E:\_Projects\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 E:\_Projects\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 E:\_Projects\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 E:\_Projects\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 E:\_Projects\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 E:\_Projects\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 E:\_Projects\yii\framework\web\CController.php(291): CFilterChain->run()
+#19 E:\_Projects\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 E:\_Projects\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#21 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('books/admin')
+#22 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 E:\_Projects\yii\web\index-test.php(15): CApplication->run()
+#24 {main}
+REQUEST_URI=/index-test.php/books/admin
+HTTP_REFERER=http://yii.loc/index-test.php/site/login
+---
+2016/04/05 01:27:06 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "CButtonColumn.viewButtonOnclick".' in E:\_Projects\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 E:\_Projects\yii\framework\YiiBase.php(220): CComponent->__set('viewButtonOncli...', '$("#viewmodal")...')
+#1 E:\_Projects\yii\framework\zii\widgets\grid\CGridView.php(388): YiiBase::createComponent(Array, Object(CGridView))
+#2 E:\_Projects\yii\framework\zii\widgets\grid\CGridView.php(359): CGridView->initColumns()
+#3 E:\_Projects\yii\framework\web\CBaseController.php(147): CGridView->init()
+#4 E:\_Projects\yii\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.gri...', Array)
+#5 E:\_Projects\yii\web\protected\views\books\admin.php(175): CBaseController->widget('zii.widgets.gri...', Array)
+#6 E:\_Projects\yii\framework\web\CBaseController.php(126): require('E:\\_Projects\\yi...')
+#7 E:\_Projects\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\_Projects\\yi...', Array, true)
+#8 E:\_Projects\yii\framework\web\CController.php(869): CBaseController->renderFile('E:\\_Projects\\yi...', Array, true)
+#9 E:\_Projects\yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#10 E:\_Projects\yii\web\protected\controllers\BooksController.php(203): CController->render('admin', Array)
+#11 E:\_Projects\yii\framework\web\actions\CInlineAction.php(49): BooksController->actionAdmin()
+#12 E:\_Projects\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 E:\_Projects\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 E:\_Projects\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 E:\_Projects\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 E:\_Projects\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 E:\_Projects\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 E:\_Projects\yii\framework\web\CController.php(291): CFilterChain->run()
+#19 E:\_Projects\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 E:\_Projects\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#21 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('books/admin')
+#22 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 E:\_Projects\yii\web\index-test.php(15): CApplication->run()
+#24 {main}
+REQUEST_URI=/index-test.php/books/admin
+HTTP_REFERER=http://yii.loc/index-test.php/site/login
+---
+2016/04/05 02:04:18 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Необходима авторизация' in E:\_Projects\yii\framework\web\auth\CWebUser.php:394
+Stack trace:
+#0 E:\_Projects\yii\framework\web\auth\CAccessControlFilter.php(180): CWebUser->loginRequired()
+#1 E:\_Projects\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), '\xD0\xA3 \xD0\xB2\xD0\xB0\xD1\x81 \xD0\xBD\xD0\xB5\xD0...')
+#2 E:\_Projects\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#3 E:\_Projects\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 E:\_Projects\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 E:\_Projects\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 E:\_Projects\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 E:\_Projects\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 E:\_Projects\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#9 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('books/admin')
+#10 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 E:\_Projects\yii\web\index-test.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/index-test.php/books/admin
+HTTP_REFERER=http://yii.loc/index-test.php/books/admin
+---
+2016/04/05 02:32:15 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (E:\_Projects\yii\framework\web\helpers\CHtml.php:108)
+Stack trace:
+#0 E:\_Projects\yii\framework\web\helpers\CHtml.php(181): renderAttributes()
+#1 E:\_Projects\yii\framework\zii\widgets\jui\CJuiDialog.php(75): openTag()
+#2 E:\_Projects\yii\framework\web\CBaseController.php(147): CJuiDialog->init()
+#3 E:\_Projects\yii\framework\web\CBaseController.php(197): BooksController->createWidget()
+#4 E:\_Projects\yii\web\protected\views\books\admin.php(45): BooksController->beginWidget()
+#5 E:\_Projects\yii\framework\web\CBaseController.php(126): require()
+#6 E:\_Projects\yii\framework\web\CBaseController.php(95): BooksController->renderInternal()
+#7 E:\_Projects\yii\framework\web\CController.php(869): BooksController->renderFile()
+#8 E:\_Projects\yii\framework\web\CController.php(782): BooksController->renderPartial()
+#9 E:\_Projects\yii\web\protected\controllers\BooksController.php(208): BooksController->render()
+#10 E:\_Projects\yii\framework\web\actions\CInlineAction.php(49): BooksController->actionAdmin()
+#11 E:\_Projects\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 E:\_Projects\yii\framework\web\filters\CFilterChain.php(133): BooksController->runAction()
+#13 E:\_Projects\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 E:\_Projects\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#15 E:\_Projects\yii\framework\web\filters\CInlineFilter.php(58): BooksController->filterAccessControl()
+#16 E:\_Projects\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#17 E:\_Projects\yii\framework\web\CController.php(291): CFilterChain->run()
+#18 E:\_Projects\yii\framework\web\CController.php(265): BooksController->runActionWithFilters()
+#19 E:\_Projects\yii\framework\web\CWebApplication.php(282): BooksController->run()
+#20 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#22 E:\_Projects\yii\web\index-test.php(15): CWebApplication->run()
+REQUEST_URI=/index-test.php/books/admin
+2016/04/05 02:32:57 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (E:\_Projects\yii\framework\web\helpers\CHtml.php:108)
+Stack trace:
+#0 E:\_Projects\yii\framework\web\helpers\CHtml.php(181): renderAttributes()
+#1 E:\_Projects\yii\framework\zii\widgets\jui\CJuiDialog.php(75): openTag()
+#2 E:\_Projects\yii\framework\web\CBaseController.php(147): CJuiDialog->init()
+#3 E:\_Projects\yii\framework\web\CBaseController.php(197): BooksController->createWidget()
+#4 E:\_Projects\yii\web\protected\views\books\admin.php(45): BooksController->beginWidget()
+#5 E:\_Projects\yii\framework\web\CBaseController.php(126): require()
+#6 E:\_Projects\yii\framework\web\CBaseController.php(95): BooksController->renderInternal()
+#7 E:\_Projects\yii\framework\web\CController.php(869): BooksController->renderFile()
+#8 E:\_Projects\yii\framework\web\CController.php(782): BooksController->renderPartial()
+#9 E:\_Projects\yii\web\protected\controllers\BooksController.php(208): BooksController->render()
+#10 E:\_Projects\yii\framework\web\actions\CInlineAction.php(49): BooksController->actionAdmin()
+#11 E:\_Projects\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 E:\_Projects\yii\framework\web\filters\CFilterChain.php(133): BooksController->runAction()
+#13 E:\_Projects\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 E:\_Projects\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#15 E:\_Projects\yii\framework\web\filters\CInlineFilter.php(58): BooksController->filterAccessControl()
+#16 E:\_Projects\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#17 E:\_Projects\yii\framework\web\CController.php(291): CFilterChain->run()
+#18 E:\_Projects\yii\framework\web\CController.php(265): BooksController->runActionWithFilters()
+#19 E:\_Projects\yii\framework\web\CWebApplication.php(282): BooksController->run()
+#20 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#22 E:\_Projects\yii\web\index-test.php(15): CWebApplication->run()
+REQUEST_URI=/index-test.php/books/admin
+2016/04/05 02:33:11 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (E:\_Projects\yii\framework\web\helpers\CHtml.php:108)
+Stack trace:
+#0 E:\_Projects\yii\framework\web\helpers\CHtml.php(181): renderAttributes()
+#1 E:\_Projects\yii\framework\zii\widgets\jui\CJuiDialog.php(75): openTag()
+#2 E:\_Projects\yii\framework\web\CBaseController.php(147): CJuiDialog->init()
+#3 E:\_Projects\yii\framework\web\CBaseController.php(197): BooksController->createWidget()
+#4 E:\_Projects\yii\web\protected\views\books\admin.php(45): BooksController->beginWidget()
+#5 E:\_Projects\yii\framework\web\CBaseController.php(126): require()
+#6 E:\_Projects\yii\framework\web\CBaseController.php(95): BooksController->renderInternal()
+#7 E:\_Projects\yii\framework\web\CController.php(869): BooksController->renderFile()
+#8 E:\_Projects\yii\framework\web\CController.php(782): BooksController->renderPartial()
+#9 E:\_Projects\yii\web\protected\controllers\BooksController.php(208): BooksController->render()
+#10 E:\_Projects\yii\framework\web\actions\CInlineAction.php(49): BooksController->actionAdmin()
+#11 E:\_Projects\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 E:\_Projects\yii\framework\web\filters\CFilterChain.php(133): BooksController->runAction()
+#13 E:\_Projects\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 E:\_Projects\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#15 E:\_Projects\yii\framework\web\filters\CInlineFilter.php(58): BooksController->filterAccessControl()
+#16 E:\_Projects\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#17 E:\_Projects\yii\framework\web\CController.php(291): CFilterChain->run()
+#18 E:\_Projects\yii\framework\web\CController.php(265): BooksController->runActionWithFilters()
+#19 E:\_Projects\yii\framework\web\CWebApplication.php(282): BooksController->run()
+#20 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#22 E:\_Projects\yii\web\index-test.php(15): CWebApplication->run()
+REQUEST_URI=/index-test.php/books/admin
+2016/04/05 02:39:22 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/05 02:39:22 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/05 02:39:41 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/05 02:39:41 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/05 02:40:15 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/05 02:40:15 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/05 02:42:42 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/05 02:42:42 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/05 02:43:59 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/05 02:43:59 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/05 03:08:11 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/05 03:08:11 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/05 03:08:25 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/05 03:08:25 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/05 03:21:34 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/05 03:21:34 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/05 03:21:38 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/05 03:21:38 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/05 03:21:43 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/05 03:21:43 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/05 03:21:48 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/05 03:21:48 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/05 03:22:59 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/05 03:22:59 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/05 03:23:01 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/05 03:23:01 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/05 03:23:04 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/05 03:23:04 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/05 03:30:24 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/05 03:30:24 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/05 03:33:08 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/05 03:33:08 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/05 03:33:12 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/05 03:33:12 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/05 03:33:36 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/05 03:33:36 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/05 03:35:18 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/05 03:35:18 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/05 03:35:20 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/05 03:35:20 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/05 03:35:24 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/05 03:35:24 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/05 03:35:34 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/05 03:35:34 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/05 03:35:35 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/05 03:35:35 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/05 03:35:37 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/05 03:35:37 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/05 03:35:38 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/05 03:35:38 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/05 03:35:39 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/05 03:35:39 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/05 03:35:42 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/05 03:35:42 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/05 03:35:43 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/05 03:35:43 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/05 03:35:43 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/05 03:35:43 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/05 03:35:44 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/05 03:35:44 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/05 03:35:45 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/05 03:35:45 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/05 03:35:48 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/05 03:35:48 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/05 03:35:49 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/05 03:35:49 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/05 03:35:49 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/05 03:35:49 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/05 03:35:50 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/05 03:35:50 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/05 03:36:13 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/05 03:36:13 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/05 03:36:14 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/05 03:36:14 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/05 03:36:17 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/05 03:36:17 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/05 03:36:19 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/05 03:36:19 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/05 03:36:22 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/05 03:36:22 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/05 03:36:24 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/05 03:36:24 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/05 03:36:34 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/05 03:36:34 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/05 05:25:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in E:\_Projects\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\_Projects\yii\web\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://yii.loc/index-test.php/site/login
+---
+2016/04/05 11:11:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in E:\_Projects\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\_Projects\yii\web\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://yii.loc/index-test.php/site/login
+---
+2016/04/06 02:46:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in E:\_Projects\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\_Projects\yii\web\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://yii.loc/index-test.php/books
+---
+2016/04/06 02:48:10 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 02:48:10 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 02:48:15 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 02:48:15 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 02:48:25 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 02:48:25 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 02:48:26 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 02:48:26 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 02:48:27 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 02:48:27 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 02:50:25 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 02:50:25 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 02:50:29 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 02:50:29 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 02:50:34 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 02:50:34 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 02:51:26 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 02:51:26 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 02:51:29 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 02:51:29 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 02:51:34 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 02:51:34 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 02:54:41 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "CWebApplication.requiest".' in E:\_Projects\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 E:\_Projects\yii\framework\base\CModule.php(105): CComponent->__get('requiest')
+#1 E:\_Projects\yii\web\protected\views\books\update.php(23): CModule->__get('requiest')
+#2 E:\_Projects\yii\framework\web\CBaseController.php(126): require('E:\\_Projects\\yi...')
+#3 E:\_Projects\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\_Projects\\yi...', Array, true)
+#4 E:\_Projects\yii\framework\web\CController.php(869): CBaseController->renderFile('E:\\_Projects\\yi...', Array, true)
+#5 E:\_Projects\yii\framework\web\CController.php(782): CController->renderPartial('update', Array, true)
+#6 E:\_Projects\yii\web\protected\controllers\BooksController.php(168): CController->render('update', Array)
+#7 [internal function]: BooksController->actionUpdate('170')
+#8 E:\_Projects\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(BooksController), Array)
+#9 E:\_Projects\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(BooksController), Object(ReflectionMethod), Array)
+#10 E:\_Projects\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 E:\_Projects\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 E:\_Projects\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 E:\_Projects\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 E:\_Projects\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 E:\_Projects\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 E:\_Projects\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 E:\_Projects\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 E:\_Projects\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#19 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('books/update')
+#20 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 E:\_Projects\yii\web\index-test.php(15): CApplication->run()
+#22 {main}
+REQUEST_URI=/index-test.php/books/update/170
+HTTP_REFERER=http://yii.loc/index-test.php/books/admin
+---
+2016/04/06 02:55:01 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 02:55:01 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 02:55:03 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 02:55:03 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 02:55:06 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 02:55:06 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 02:55:10 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 02:55:10 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 02:55:33 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 02:55:33 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 02:56:00 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 02:56:00 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 02:56:06 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 02:56:06 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 02:57:16 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 02:57:16 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 02:57:21 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 02:57:21 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 02:57:25 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 02:57:25 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 02:57:27 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 02:57:27 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 02:57:28 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 02:57:28 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 02:58:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "http://yii.loc/index-test.php/books/update/173".' in E:\_Projects\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('http://yii.loc/...')
+#1 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\_Projects\yii\web\index-test.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/index-test.php/http://yii.loc/index-test.php/books/update/173
+HTTP_REFERER=http://yii.loc/index-test.php/books/update/173
+---
+2016/04/06 03:00:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "index-test.php/books/update/173".' in E:\_Projects\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('index-test.php/...')
+#1 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\_Projects\yii\web\index-test.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/index-test.php/index-test.php/books/update/173
+HTTP_REFERER=http://yii.loc/index-test.php/books/update/173
+---
+2016/04/06 03:16:31 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 03:16:31 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 03:16:35 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 03:16:35 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 03:16:41 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 03:16:41 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 03:17:50 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 03:17:50 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 03:18:11 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 03:18:11 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 03:18:38 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 03:18:38 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 03:18:59 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 03:18:59 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 03:20:03 [error] [php] Array to string conversion (E:\_Projects\yii\web\protected\views\books\update.php:23)
+Stack trace:
+#0 E:\_Projects\yii\framework\web\CController.php(869): BooksController->renderFile()
+#1 E:\_Projects\yii\framework\web\CController.php(782): BooksController->renderPartial()
+#2 E:\_Projects\yii\web\protected\controllers\BooksController.php(168): BooksController->render()
+#3 unknown(0): BooksController->actionUpdate()
+#4 E:\_Projects\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#5 E:\_Projects\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 E:\_Projects\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 E:\_Projects\yii\framework\web\filters\CFilterChain.php(133): BooksController->runAction()
+#8 E:\_Projects\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 E:\_Projects\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 E:\_Projects\yii\framework\web\filters\CInlineFilter.php(58): BooksController->filterAccessControl()
+#11 E:\_Projects\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 E:\_Projects\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 E:\_Projects\yii\framework\web\CController.php(265): BooksController->runActionWithFilters()
+#14 E:\_Projects\yii\framework\web\CWebApplication.php(282): BooksController->run()
+#15 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 E:\_Projects\yii\web\index-test.php(15): CWebApplication->run()
+REQUEST_URI=/index-test.php/books/update/7
+2016/04/06 03:20:07 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 03:20:07 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 03:20:27 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 03:20:27 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 03:20:35 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 03:20:35 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 03:21:12 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 03:21:12 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 03:21:59 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 03:21:59 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 03:24:52 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 03:24:52 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 03:24:55 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 03:24:55 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 03:25:04 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 03:25:04 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 03:25:58 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 03:25:58 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 03:27:15 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 03:27:15 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 03:27:17 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 03:27:17 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 03:27:18 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 03:27:18 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 03:27:22 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 03:27:22 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 03:27:24 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 03:27:24 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 03:28:34 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 03:28:34 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 03:28:47 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 03:28:47 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 03:29:02 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 03:29:02 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 03:29:04 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 03:29:04 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 03:38:47 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 03:38:47 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 03:40:59 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 03:40:59 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 03:49:06 [error] [php] array_merge(): Argument #2 is not an array (E:\_Projects\yii\web\protected\controllers\BooksController.php:162)
+Stack trace:
+#0 E:\_Projects\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 E:\_Projects\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 E:\_Projects\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 E:\_Projects\yii\framework\web\filters\CFilterChain.php(133): BooksController->runAction()
+#4 E:\_Projects\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 E:\_Projects\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 E:\_Projects\yii\framework\web\filters\CInlineFilter.php(58): BooksController->filterAccessControl()
+#7 E:\_Projects\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 E:\_Projects\yii\framework\web\CController.php(291): CFilterChain->run()
+#9 E:\_Projects\yii\framework\web\CController.php(265): BooksController->runActionWithFilters()
+#10 E:\_Projects\yii\framework\web\CWebApplication.php(282): BooksController->run()
+#11 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 E:\_Projects\yii\web\index-test.php(15): CWebApplication->run()
+REQUEST_URI=/index-test.php/books/update/1
+2016/04/06 03:53:44 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 03:53:44 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 03:54:36 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 03:54:36 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 03:56:49 [error] [php] Undefined index: Books (E:\_Projects\yii\web\protected\controllers\BooksController.php:214)
+Stack trace:
+#0 E:\_Projects\yii\framework\web\filters\CFilterChain.php(133): BooksController->runAction()
+#1 E:\_Projects\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 E:\_Projects\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 E:\_Projects\yii\framework\web\filters\CInlineFilter.php(58): BooksController->filterAccessControl()
+#4 E:\_Projects\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 E:\_Projects\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 E:\_Projects\yii\framework\web\CController.php(265): BooksController->runActionWithFilters()
+#7 E:\_Projects\yii\framework\web\CWebApplication.php(282): BooksController->run()
+#8 E:\_Projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 E:\_Projects\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 E:\_Projects\yii\web\index-test.php(15): CWebApplication->run()
+REQUEST_URI=/index-test.php/books/admin
+2016/04/06 04:07:02 [warning] [application] Не удалось присвоить небезопасный атрибут "Books_sort" класса "Books".
+2016/04/06 04:07:12 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 04:07:12 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 04:07:42 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 04:07:42 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 04:08:18 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 04:08:18 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 04:08:29 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 04:08:29 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 04:08:32 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 04:08:32 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 04:08:47 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 04:08:47 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 04:09:04 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 04:09:04 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 04:09:35 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 04:09:35 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 04:09:52 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 04:09:52 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 04:09:58 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 04:09:58 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 04:13:07 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 04:13:07 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 04:13:15 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 04:13:15 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 04:13:21 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 04:13:21 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 04:13:37 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 04:13:37 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 04:14:47 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 04:14:47 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 04:20:33 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 04:20:33 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 04:22:15 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 04:22:15 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".
+2016/04/06 04:22:41 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_from" класса "Books".
+2016/04/06 04:22:41 [warning] [application] Не удалось присвоить небезопасный атрибут "_date_to" класса "Books".

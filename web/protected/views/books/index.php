@@ -7,8 +7,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Create Books', 'url'=>array('create')),
-	array('label'=>'Manage Books', 'url'=>array('admin')),
+	array('label'=>'Create Books', 'url'=>array('create'), 'visible'=>!Yii::app()->user->isGuest),
+	array('label'=>'Manage Books', 'url'=>array('admin'), 'visible'=>!Yii::app()->user->isGuest),
 );
 ?>
 
