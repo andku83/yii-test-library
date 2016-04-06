@@ -14,20 +14,20 @@
     <div class="row">
         <?php echo $form->dropDownList($model,'author_id',CHtml::listData(Authors::model()->findAll(), 'id', 'fullName'), array('empty'=>Yii::t('books','Author'))); ?>
 
-        <?php echo $form->textField($model,'name',array('size'=>60,'maxlength'=>255, 'placeholder'=>Yii::t('books','Name book'))); ?>
+        <?php echo $form->textField($model,'name',array('size'=>40,'maxlength'=>255, 'placeholder'=>Yii::t('books','Name book'))); ?>
     </div>
 
 
 	<div class="row">
-        <?php echo $form->label($model,'_date_from'); ?>
-        <?php echo $form->dateField($model,'_date_from'); ?>
+        <?php echo $form->label($model,'_date_from',array('style'=>'width: 120px;margin-top: 10px;')); ?>
+        <?php echo $form->dateField($model,'_date_from',array('style'=>'float:left;')); ?>
 
-        <?php echo $form->label($model,'_date_to'); ?>
-        <?php echo $form->dateField($model,'_date_to'); ?>
+        <?php echo $form->label($model,'_date_to',array('style'=>'width: 30px;margin-top: 10px;')); ?>
+        <?php echo $form->dateField($model,'_date_to',array()); ?>
+        <?php echo CHtml::submitButton(Yii::t('books','Search'),array('style'=>'float:right;')); ?>
     </div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton(Yii::t('books','Search')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

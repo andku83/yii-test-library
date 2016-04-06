@@ -43,6 +43,9 @@ return array(
             // ImageMagick setup path
             'params'=>array('directory'=>'/opt/local/bin'),
         ),
+        'cssmenu'=>array(
+            'class'=>'ext.cssmenu.CssMenu',
+        ),
         'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
@@ -58,7 +61,6 @@ return array(
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 			),
 		),
-
 
 		// database settings are configured in database.php
 		'db'=>require(dirname(__FILE__).'/database.php'),

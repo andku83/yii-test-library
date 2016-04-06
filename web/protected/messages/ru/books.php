@@ -7,7 +7,7 @@ return array(
     'Preview' => 'Превью',
     'Date' => 'Дата выхода книги',
     'Author' => 'Автор',
-    'Book release date' => 'Дата выхода книги:',
+    'Book release date:' => 'Дата выхода книги:',
     'to' => 'до',
     'Search' => 'Искать',
     'Action buttons' => 'Кнопки действий',

@@ -32,11 +32,11 @@ class BooksController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('admin','create','update'),
+				'actions'=>array('admin','create','update', 'delete'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('delete'),
+				'actions'=>array(''),
 				'users'=>array('admin'),
 			),
 			array('deny',  // deny all users
@@ -209,7 +209,7 @@ class BooksController extends Controller
         //$session->open();
 		$model=new Books('search');
 		//$model->unsetAttributes();  // clear any default values
-		if (isset($_GET))
+		if (!empty($_GET))
         {
             if(isset($_GET['Books']))
             {

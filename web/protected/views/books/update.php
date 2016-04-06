@@ -20,4 +20,5 @@ $this->menu=array(
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>
 
-<?php print_r(Yii::app()->session['last_criteria']); ?>
+<?php //print_r(Yii::app()->session['last_criteria']); ?>
+<?php //echo strtotime($model->_date_from); ?>

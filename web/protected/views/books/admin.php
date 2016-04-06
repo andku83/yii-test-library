@@ -202,4 +202,5 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 	),
 ));
 ?>
-<?php print_r($_GET); ?>
+<?php //print_r($_GET); ?>
+<?php// echo date('Y-m-d',strtotime($_GET['Books']['_date_from'])); ?>

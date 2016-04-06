@@ -33,14 +33,24 @@
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
 				array('label'=>'Home', 'url'=>array('/site/index')),
-				array('label'=>'Books', 'url'=>array('/books')),
-				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
+				array('label'=>'Books',
+                    'url'=>array('/books/'),
+                    'itemOptions'=>array('class'=>'dropdown-menu', 'role'=>'menu'),
+                    //'submenuHtmlOptions'=>array('class'=>'sub-menu','role'=>'menu'),
+                 /*   'items'=>array(
+                        array('label'=>'List', 'url'=>array('/books/'),'itemOptions'=>array('class'=>'.dropdown-submenu')),
+                        array('label'=>'Create', 'url'=>array('/books/create'),'itemOptions'=>array('class'=>'.dropdown-submenu'),'visible'=>!Yii::app()->user->isGuest),
+                        array('label'=>'Manage', 'url'=>array('/books/admin'),'itemOptions'=>array('class'=>'.dropdown-submenu'),'visible'=>!Yii::app()->user->isGuest),
+                    )*/
+                ),
+                array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
 				array('label'=>'Contact', 'url'=>array('/site/contact')),
 				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
 			),
 		)); ?>
-	</div><!-- mainmenu -->
+
+    </div><!-- mainmenu -->
 	<?php if(isset($this->breadcrumbs)):?>
 		<?php $this->widget('zii.widgets.CBreadcrumbs', array(
 			'links'=>$this->breadcrumbs,

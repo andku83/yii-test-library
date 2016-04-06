@@ -19,7 +19,6 @@ class Books extends CActiveRecord
 {
     public $_date_from;
     public $_date_to;
-    public $author_search;
     const PATH = '/../uploaded/images/';
 
     /**
@@ -47,8 +46,7 @@ class Books extends CActiveRecord
 			//array('date_create, date_update, date', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, name, date_create, date_update, preview, date, author_id,
-			    $_date_from, $_date_to, author_search', 'safe', 'on'=>'search'),
+			array('name, date, author_id, _date_from, _date_to', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -100,41 +98,26 @@ class Books extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-        $criteria->with = array( 'author' => array('id', 'fullName'));
+        $criteria->with = array( 'author' => array('id'));
 
-/*        if(!empty($this->author_id)){
-            //В фильтр id_author у нас есть возможность писать любой критерий поиска по имени или фамилии
-            $criteria->addSearchCondition(
-                'author_id',
-                new CDbExpression( 'CONCAT(author.firstname, " ", author.lastname)' )
-            );
-        }
-        if(!empty($this->name)){
-            $criteria->addSearchCondition(
-                'name',
-                $this->name
-            );
-        }*/
-
-        $criteria->compare('id',$this->id);
+        //$criteria->compare('id',$this->id);
 		$criteria->compare('name',$this->name,true);
-		$criteria->compare('date_create',$this->date_create,true);
-		$criteria->compare('date_update',$this->date_update,true);
-		$criteria->compare('preview',$this->preview,true);
+		//$criteria->compare('date_create',$this->date_create,true);
+		//$criteria->compare('date_update',$this->date_update,true);
+		//$criteria->compare('preview',$this->preview,true);
 		$criteria->compare('date',$this->date,true);
 		$criteria->compare('author_id',$this->author_id);
-        $criteria->compare('author_search', $this->author_search,true);
 
-        $criteria->compare('_date_from',$this->_date_from,true);
-        $criteria->compare('_date_to',$this->_date_to,true);
+            $criteria->compare('date','>='.($this->_date_from));
+            $criteria->compare('date','<='.($this->_date_to));
 
         return new CActiveDataProvider('Books', array(
             'criteria' => $criteria,
             'sort' => array(
                 'attributes' => array(
-                    'author_search' => array(
-                        'asc' => 'author.fullName',
-                        'desc' => 'author.fullName DESC',
+                    'author_id' => array(
+                        'asc' => 'author.firstname, author.lastname' ,
+                        'desc' => 'author.firstname DESC, author.lastname DESC',
                     ),
                     '*',
                 ),
